@@ -7,21 +7,6 @@ def turn_right():
     turn_left()
     turn_left()
     turn_left()
-    
-def clear_wall():  
-    turn_left()
-    
-    while wall_on_right():
-        move()
-    
-    turn_right()
-    move()
-    turn_right()
-    
-    while not wall_in_front():
-        move()
-    
-    turn_left()
 
 # find a wall
 while front_is_clear():
@@ -35,4 +20,3 @@ while not at_goal():
         move()
     else:
         turn_left()
-

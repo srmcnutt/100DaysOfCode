@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" modified="2021-01-06T15:15:08.914Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="6YYmFfrIiWHJWqBjk7e3" version="13.10.0" type="github">
+  <diagram id="IJ5MMP5cxtqDz1lz1Sa4" name="Page-1">
+    <mxGraphModel dx="1186" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-1" value="Game Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-2" value="Is letter in word?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="450" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-28" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-7" target="5MxBANNFP4OLtzNSeDSf-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-7" value="Is counter 0?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="613" y="460" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-8" value="Guess a letter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-9" value="Add hangman segment&lt;br&gt;Decrement counter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-10" value="Game end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="413" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-11" target="5MxBANNFP4OLtzNSeDSf-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-11" value="Display lose message" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="608" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-12" value="Add letter to display" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-29" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-13" target="5MxBANNFP4OLtzNSeDSf-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="123" y="810" />
+              <mxPoint x="123" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-13" value="Is word complete?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="183" y="750" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-14" value="Display win message" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="413" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-15" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-1" target="5MxBANNFP4OLtzNSeDSf-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="390" as="sourcePoint" />
+            <mxPoint x="250" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-16" value="yes" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-2" target="5MxBANNFP4OLtzNSeDSf-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="263" y="310" as="sourcePoint" />
+            <mxPoint x="253" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-8" target="5MxBANNFP4OLtzNSeDSf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="268" y="570" as="sourcePoint" />
+            <mxPoint x="253" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-12" target="5MxBANNFP4OLtzNSeDSf-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="263" y="580" as="sourcePoint" />
+            <mxPoint x="263" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-20" value="yes" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-13" target="5MxBANNFP4OLtzNSeDSf-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="263" y="700" as="sourcePoint" />
+            <mxPoint x="263" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-21" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-14" target="5MxBANNFP4OLtzNSeDSf-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="333" y="820" as="sourcePoint" />
+            <mxPoint x="433" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-22" value="no" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-2" target="5MxBANNFP4OLtzNSeDSf-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="263" y="310" as="sourcePoint" />
+            <mxPoint x="263" y="360" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-23" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-9" target="5MxBANNFP4OLtzNSeDSf-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="323.05999999999995" y="510.03999999999996" as="sourcePoint" />
+            <mxPoint x="423" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-24" value="yes" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-7" target="5MxBANNFP4OLtzNSeDSf-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="553" y="520" as="sourcePoint" />
+            <mxPoint x="623" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-31" value="Generate Random Word" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-32" value="Generate as many blanks as letters in word" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="193" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-34" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-31" target="5MxBANNFP4OLtzNSeDSf-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="270" as="sourcePoint" />
+            <mxPoint x="490" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MxBANNFP4OLtzNSeDSf-37" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MxBANNFP4OLtzNSeDSf-32" target="5MxBANNFP4OLtzNSeDSf-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="220" as="sourcePoint" />
+            <mxPoint x="271.5" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

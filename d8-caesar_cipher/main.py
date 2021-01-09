@@ -36,8 +36,10 @@ while play[:1] != "n":
     print ("come on, dog, enter an integer\n")
   
 # basic input validation and then call our function
-  if text and (direction[:1] == 'e' or 'd'):
+  if text and (direction[0] in ['e', 'd']) :
     caesar(text, shift, direction)
+  else:
+      print("seems to be a problem")
 
   play = input("Run again? \n")
   print("\n")

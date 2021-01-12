@@ -4,7 +4,7 @@
 import random
 import logging
 logging.basicConfig(
-  level = "DEBUG"
+  level = "WARNING"
 )
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -55,16 +55,22 @@ def blackjack():
   computer_cards = []
   inital_hand = 2
   
+  print("welcome to blackjack\n")
+
   #deal inital hand 
   for count in range(inital_hand):
     card = deal_card()
     user_cards.append(card)
-  
-  for count in range(inital_hand):
+
     card = deal_card()
     computer_cards.append(card)
   
   logging.debug(f"initial hands:  user: {user_cards}. computer:   {computer_cards}.")
+  
+  user_score = calculate_score(user_cards)
+
+  print(f"your hand: {user_cards}, your score: {user_score}")
+  print(f"computer first card: {computer_cards[0]}")
   
   # calculate scores
   user_score = calculate_score(user_cards)
@@ -94,6 +100,9 @@ def blackjack():
         game_continue == False
         
       logging.debug(f"user score is: {user_score}.")
+
+      print(f"your hand: {user_cards}, your score: {user_score}")
+      print(f"computer first card: {computer_cards[0]}")
   
     while computer_score < 17:
       card = deal_card()

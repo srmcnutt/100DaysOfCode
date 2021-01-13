@@ -1,3 +1,5 @@
+# 100 days of code day 14 - Steven McNutt 2021
+
 #import resources
 import os
 import logging

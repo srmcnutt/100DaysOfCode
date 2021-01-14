@@ -21,7 +21,6 @@ def clear_screen():
       # for windows platfrom
       _ = os.system('cls')
 
-
 # TODO main game loop
 def game():
   score = 0
@@ -35,8 +34,7 @@ def game():
     if score > 0:
       print(f"You're right! Current score: {score}.")
 
-    # pick two people at random
-    # make sure we don't pick the same person twicee
+    # pick two random people, not the same person twice
     a = 0
     b = 0
     while a == b:
@@ -50,29 +48,27 @@ def game():
     logger.debug(f"celeb a: {celeb_a}.  celeb_b: {celeb_b}")
 
     print(f"Compare A: {celeb_a['name']}, a {celeb_a['description']}, from {celeb_a['country']}.")
-    
+
     print(vs+ "\n")
-    
+
     print(f"Against B: {celeb_b['name']}, a {celeb_b['description']}, from {celeb_b['country']}.")
 
-    # ask the user which person has more followers
+    # ask user which person has more followers
     # TODO handle the case where the user just presses enter (currently crashes game)
-    
+
     choice = ""
     while choice != 'a' and choice != 'b':
        choice = input("Who has more followers?  Type 'a' or 'b': ")[0]
-       
+
        if choice == "a":
          picked = celeb_a
        elif choice == "b":
          picked = celeb_b
        else:
          print("invalid choice. select 'a' or 'b', please.")
-         
-       logger.debug(f"user entered: {choice}.")
-       
 
-    
+       logger.debug(f"user entered: {choice}.")
+
     # compare follower counts
     not_picked = [celeb_a, celeb_b]
     not_picked.remove(picked)
@@ -87,20 +83,11 @@ def game():
       print(logo)
       print(f"Sorry, that's wrong. Final score: {score}")
       play_game = False
-    
 
     # if user is correct, increment score, clear screen, go back to top of game loop.
     else:
       score += 1
       clear_screen()
-     
-    
-    
-
-    
-    
-    
-    
 
 clear_screen()
 game()

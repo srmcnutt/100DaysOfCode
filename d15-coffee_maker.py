@@ -2,7 +2,7 @@ import os
 import logging
 logger = logging.getLogger("coffee_machine")
 logging.basicConfig(
-    level="DEBUG"
+    level="WARNING"
 )
 
 MENU = {

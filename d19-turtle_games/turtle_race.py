@@ -12,7 +12,6 @@ user_bet = screen.textinput(
 
 
 turtle_list = []
-turtle_names = []
 
 
 def spawn_turtles():

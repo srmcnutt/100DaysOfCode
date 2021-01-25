@@ -13,7 +13,7 @@ class Paddle(Turtle):
         self.shapesize(5, 1)
         self.goto(x, 0)
 
-    def go_up(self):
+    def go_up(self, steps):
         y = self.ycor() + 10
         self.sety(y)
 

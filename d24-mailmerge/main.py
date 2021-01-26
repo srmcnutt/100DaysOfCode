@@ -1,8 +1,14 @@
-#TODO: Create a letter using starting_letter.txt 
-#for each name in invited_names.txt
-#Replace the [name] placeholder with the actual name.
-#Save the letters in the folder "ReadyToSend".
-    
-#Hint1: This method will help you: https://www.w3schools.com/python/ref_file_readlines.asp
-    #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
-        #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
+# 100 days of code day 24: mail merge.
+from merge import Merge
+
+letter = "./Input/Letters/starting_letter.txt"
+names = "./Input/Names/invited_names.txt"
+
+print("Running mail merge\n")
+
+merge = Merge(letter, names)
+
+count = merge.merge()
+
+print(f"Finished.  Processed {count} records.")
+

@@ -2,3 +2,4 @@ __*__/
 venv
 .vscode
 .DS_Store
+.idea

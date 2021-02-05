@@ -31,13 +31,19 @@ import pandas
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 nato_dict = {row.letter:row.code for (index, row) in data.iterrows()}
 
-choice = input("enter a word, and I'll return a NATO code for you: ").upper()
 
-word_list = [nato_dict[letter] for letter in choice]
+def phonetic():
+    choice = input("enter a word, and I'll return a NATO code for you: ").upper()
+    try:
+        word_list = [nato_dict[letter] for letter in choice]
+    except KeyError:
+        print("sorry.  only letters in the alphabet please")
+        phonetic()
+    else:
+        phrase = ""
+        for word in word_list:
+            phrase += f"{word} "
 
-phrase = ""
-for word in word_list:
-    phrase += f"{word} "
+        print(f"NATO phrase: {phrase}")
 
-print(f"NATO phrase: {phrase}")
-
+phonetic()

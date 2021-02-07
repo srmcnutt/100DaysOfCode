@@ -4,7 +4,7 @@ import pandas as pd
 import random
 import smtplib
 import os
-
+import csv
 
 # set some defaults for the send_email function
 # use export FROM_EMAIL="myemail@.mydomain.com"
@@ -16,7 +16,6 @@ password = os.environ.get("EMAIL_CREDS")
 subject = "happy Birthday from Steve!"
 GOOGLE_SMTP = "smtp.gmail.com"
 YAHOO_SMTP = "smtp.mail.yahoo.com"
-
 
 
 def send_mail(**kwargs):
@@ -35,6 +34,7 @@ now = dt.datetime.now()
 today = (now.month, now.day)
 letter_path = "letter_templates/"
 
+# Pandas way
 # read the birthdays.csv
 data = pd.read_csv("birthdays.csv")
 
@@ -42,6 +42,8 @@ data = pd.read_csv("birthdays.csv")
 birthdays_dict = {
     (data_row.month, data_row.day): data_row for (index, data_row) in data.iterrows()
 }
+
+
 print(birthdays_dict)
 
 

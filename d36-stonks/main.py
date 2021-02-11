@@ -18,7 +18,7 @@ symbol = "IBM"
 delta_trigger = 5
 
 
-# When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
+# When stock price increase/decreases by 5% between yesterday and the day before yesterday then fire an alert.
 url=STOCK_ENDPOINT
 params = {
     "function": "TIME_SERIES_DAILY",

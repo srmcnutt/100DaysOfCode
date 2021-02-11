@@ -73,8 +73,8 @@ if delta_percent >= delta_trigger:
             Headline: {article[0]}
             Brief: {article[1]}
             """,
-            to="+12342086495",
-            from_="+16202648149"
+            to="+15555551212",
+            from_="+15555551212"
         )
 
     print(message.status)
